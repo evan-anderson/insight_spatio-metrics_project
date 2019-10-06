@@ -1,0 +1,9 @@
+# Ar-CARE-tecture: Emporing Hospitals to Design Healthier Rooms
+
+In fall 2019, I have been an Health Data Fellow at [Insight](https://www.insighthealthdata.com). For my project during this program, I did a consulting project with [Spatio Metrics](https://www.spatiometrics.com) to complement their efforts to help hospitals identify design considerations that impact patient outcomes and hospital efficiency. I wrote a summary of my work as a [blog post on Medium](https://medium.com/@evan.o.anderson/empowering-hospitals-to-design-healthier-rooms-with-spatio-metrics-f2e4a314bef6?source=friends_link&sk=fbd32dad88a1b24796e57b581818a147).
+
+In this repo, I catelog some of the work I did to this end. The goal of this project was to produce a predictive model which could identify relationships between hospital design and health outcomes. 
+
+Spatio Metrics is awaiting the arrival and processing of hospital analysis on which to perform this analysis, but to prepare for this they had already generated hundreds of floor plans in autocad, from which they extracted spatial parameters of thousands of rooms. In order to develop a model which would be most likely stand the test of hospital outcome data, I simulated patient length of stay data based off of relationships from literature. This process is summarized in "length_of_stay_synthesis.ipynb".
+
+I then use this data to build predictive regressors for length of stay, identify important features from these models, determine sample size necessary for recovering important features, and analyze the amount of noise permissible in analyzing length of stay. This is summarized in "predictive_modeling.ipynb".
